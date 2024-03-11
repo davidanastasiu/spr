@@ -9,12 +9,12 @@ If you make use of our code or data, please cite our paper.
     author      = {Alex Whelan and Ragwa Elsayed and Alessandro Bellofiore and David C. Anastasiu},
     title       = {Selective Partitioned Regression for Accurate Kidney Health Monitoring},
     journal     = {Annals of Biomedical Engineering},
-    volume      = {},
     year        = {2024},
-    number      = {},
-    url         = {},
-    issn        = {},
-    doi         = {10.1007/s10439-024-03470-}
+    month       = {Feb},
+    day         = {27},
+    issn        = {1573-9686},
+    doi         = {10.1007/s10439-024-03470-8},
+    url         = {https://doi.org/10.1007/s10439-024-03470-8}
 }
 ```
 
