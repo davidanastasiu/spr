@@ -1,6 +1,6 @@
 ## SPR: Selective Partitioned Regression
 
-We present our Selective Partitioned Regression (SPR) machine learning model, which was used in our paper `Selective Partitioned Regression for Accurate Kidney Health Monitoring` to efficiently and effectively predict the severity of kidney disease based on the colorimetric change in test strips.
+We present our Selective Partitioned Regression (SPR) machine learning model, which was used in our paper [Selective Partitioned Regression for Accurate Kidney Health Monitoring](https://link.springer.com/article/10.1007/s10439-024-03470-8) to efficiently and effectively predict the severity of kidney disease based on the colorimetric change in test strips.
 
 If you make use of our code or data, please cite our paper.
 
