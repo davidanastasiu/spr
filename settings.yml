@@ -1,0 +1,58 @@
+# Dataset Augmentation : ["None", "tile"]
+ds_aug : "tile"
+img_w : 64
+img_h : 128
+# Resize : center, uniform, None
+resize_method : 'center'
+# time = [all, 2, 12, 22, 32] : string
+img_time : '22'
+# color_space : ['rgb', 'hsv', 'hls', 'lab', 'YCrCb', ]
+color_space : 'lab'
+dual : False
+# illuminant{“A”, “B”, “C”, “D50”, “D55”, “D65”, “D75”, “E”}
+illuminant : 'D65'
+# observer{“2”, “10”, “R”}
+observer : '2'
+# Histogram Method : ['channel-wise', '2d', '3d', 'pixel']
+hist_method : 'channel-wise'
+global_features : False
+# channel_mask : [0,1,2] -> [R|G|B]
+channel_mask : [0, 1, 2]
+hist_bins : [256, 256, 256]
+c1_range : [0, 256]
+c2_range : [0, 256]
+c3_range : [0, 256]
+# Regression Partitioning : [0.0, 60.0] -> Methods = ['default', 'manual', 'uniform-3', 'uniform-4', 'scaled']
+partition_type : "uniform-4"
+#r1_range : [0.0, 4.0]
+#r2_range : [4.0, 8.0]
+#r3_range : [8.0, 20.0]
+#r4_range : [20.0, 60.0]
+r1_range : [0.0, 3.0]
+r2_range : [3.0, 6.0]
+r3_range : [6.0, 20.0]
+r4_range : [20.0, 60.0]
+# logical_mask : [True, False] --> Mask Image by thresholding
+logical_mask : False
+# Normalization : ['z_score', 'min_max', None]
+normalization : None
+# filter_type : ['mean-k', 'median-k', 'gaussian', None]
+filter_type : None
+# Gridsearch Options : [full, random, halving]
+gs_type : 'random'
+gs_iter : 0
+cv_folds : 5
+cv_verbose : 42
+cv_jobs : 10
+# cv_score : ['f1' | 'rmse' | 'r2' ]
+cv_score : 'rmse'
+# Sample Splits
+seed : 0
+img_dir : 'dataset'
+test_size : 0.2
+validation_size : 0.05
+# max_samples 0 = all samples, > 0 = use first max_samples samples
+max_samples : 0
+# Models : ['XGBoost', 'Histogram_Boosted_Trees', 'Random_Forest', 'Decision_Tree', 'KNN', 'Logistic_Regression', 'SVM']
+# Sub-Estimators for Baseline & Composite
+models : ['Histogram_Boosted_Trees']
